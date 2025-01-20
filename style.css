@@ -281,14 +281,13 @@ footer {
 
 /* About */
 
-.about-main-tag{
+.about-main-tag {
   margin: 80px 0;
 }
 
 .about-main {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  
 }
 
 .about-hero {
@@ -626,6 +625,7 @@ footer {
   /* Navbar */
   .navbar {
     flex-direction: column;
+    position: relative;
     padding: 20px;
   }
 
@@ -723,5 +723,18 @@ footer {
 
   .footer-container {
     padding: 40px;
+  }
+}
+
+
+/* Media Queries */
+
+nav { min-width: 130px; }
+
+@media (min-width: 480px) {
+  nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
   }
 }
